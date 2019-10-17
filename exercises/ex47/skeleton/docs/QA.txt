@@ -1,0 +1,8 @@
+Q1:运行nosetests时出现语法错误。
+A:看看错误信息的具体内容，把对应行的语法错误改正过来。nosetests 这类工具会运行你写的程序代码和测试代码，所以和Python一样，它也会找出你的语法错误。
+
+Q2:无法导入ex47.game？
+A:确认你创建了ex47/__init__.py文件，回到前面的内容看看如何创建。
+
+Q3:运行nosetests时看到UserWarning。
+A:你也许装了两个版本的 Python，或者你没有使用 distribute，照着习题 46 装一下distribute或者pip就可以了。

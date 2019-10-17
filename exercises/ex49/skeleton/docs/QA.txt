@@ -1,0 +1,4 @@
+Q1:assert_raises老是弄不对。
+A:确认你写的是 assert_raises(exception, callable, parameters)而不是assert_raises (exception, callable(parameters))。
+    注意第二个格式所做的其实是调用这个函数，并将函数的返回值作为参数传给assert_raises，这样做是错误的。
+    必须把药调用的函数和它的参数分别传入assert_raises中。
